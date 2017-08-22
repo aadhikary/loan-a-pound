@@ -1,7 +1,7 @@
 package com.loan.a.pound.model.dao.impl;
 
+import com.loan.a.pound.core.logic.impl.Status;
 import com.loan.a.pound.model.dao.IApplication;
-import com.loan.a.pound.model.dao.Status;
 
 public class Applications implements IApplication{
 

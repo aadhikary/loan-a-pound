@@ -16,13 +16,10 @@ public class User implements IUser {
   @Id
   @Column(name="user_id", nullable = false)
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  protected long userId;
+  private long userId;
   
   @Column(name = "name")
-  protected String name;
-  
-  public User() {
-  }
+  private String name;
   
   public long getUserId() {
     return userId;

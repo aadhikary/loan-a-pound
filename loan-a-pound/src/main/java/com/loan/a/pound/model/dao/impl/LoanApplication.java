@@ -11,7 +11,13 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.loan.a.pound.core.logic.impl.Status;
 
+
+/**
+ * @author Silvia
+ *
+ */
 /**
  * @author Silvia
  *
@@ -25,6 +31,9 @@ public class LoanApplication {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long loanApplicationId;
 
+  @Column(nullable = false)
+  private long userId;
+
   @Column(columnDefinition="DATETIME")
   @Temporal(TemporalType.TIMESTAMP)
   private Date loanCreationDate;
@@ -36,6 +45,9 @@ public class LoanApplication {
   private long assignedAdministrator;
 
   private long assignedUnderwriter;
+
+  @Column(nullable = false)
+  private Status status;
 
   public Date getLoanCreationDate() {
     return loanCreationDate;
@@ -71,6 +83,22 @@ public class LoanApplication {
 
   public void setAssignedUnderwriter(long assignedUnderwriter) {
     this.assignedUnderwriter = assignedUnderwriter;
+  }
+
+  public Status getStatus() {
+    return status;
+  }
+
+  public void setStatus(Status status) {
+    this.status = status;
+  }
+
+  public long getUserId() {
+    return userId;
+  }
+
+  public void setUserId(long userId) {
+    this.userId = userId;
   }
   
 }

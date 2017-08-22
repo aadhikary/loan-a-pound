@@ -1,4 +1,4 @@
-package com.loan.a.pound.model.dao;
+package com.loan.a.pound.core.logic.impl;
 
 public enum Status {
 	
@@ -6,6 +6,5 @@ public enum Status {
 	BEING_REVIEWED,
 	REVIEWED,
 	APPROVED,
-	DENIED,
-	MORE_INFORMATION_NEEDED;
+	DENIED;
 }

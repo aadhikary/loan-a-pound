@@ -1,6 +1,6 @@
 package com.loan.a.pound.model.dao;
 
-public interface Loans {
+public interface LoansTypes {
   
   public int getLoanId();
   
