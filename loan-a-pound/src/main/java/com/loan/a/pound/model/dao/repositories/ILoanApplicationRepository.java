@@ -1,7 +1,5 @@
 package com.loan.a.pound.model.dao.repositories;
 
-import java.util.List;
-
 import org.springframework.data.repository.CrudRepository;
 
 import com.loan.a.pound.model.dao.impl.LoanApplication;

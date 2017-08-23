@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.loan.a.pound.core.logic.impl.Status;
-import com.loan.a.pound.model.dao.ILoanApplication;
-import com.loan.a.pound.model.dao.IUser;
 import com.loan.a.pound.model.dao.impl.LoanApplication;
 import com.loan.a.pound.model.dao.impl.User;
 import com.loan.a.pound.model.dao.repositories.ILoanApplicationRepository;

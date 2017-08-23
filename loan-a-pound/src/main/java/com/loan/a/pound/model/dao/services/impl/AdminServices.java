@@ -11,8 +11,8 @@ import com.loan.a.pound.model.dao.repositories.ILoanApplicationRepository;
 import com.loan.a.pound.model.dao.repositories.IUserRepository;
 import com.loan.a.pound.services.IAdminServices;
 
-public class AdminServices implements IAdminServices{
-  
+public class AdminServices implements IAdminServices {
+
   @Autowired
   public IUserRepository userRepository;
 
@@ -21,20 +21,20 @@ public class AdminServices implements IAdminServices{
 
   @Autowired
   public IApplicationAndLoanType applicationLoanType;
-  
+
 
   @Override
   public List<LoanApplication> getAllLinkedLoanApplication(long userId) {
-//    return loanApplicationRepository.find(userId);
+    // return loanApplicationRepository.find(userId);
     return null;
   }
 
   @Override
   public void setUpValidLoanType(long applicationId, LoanTypeName loanType) {
-    LoanApplication loanApplication = loanApplicationRepository.findOne(applicationId);
-    //TODO
-    
-    
+    // LoanApplication loanApplication = loanApplicationRepository.findOne(applicationId);
+    // TODO
+
+
   }
 
 }
