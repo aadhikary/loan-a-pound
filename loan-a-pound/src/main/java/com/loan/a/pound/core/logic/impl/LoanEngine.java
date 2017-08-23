@@ -1,16 +1,15 @@
 package com.loan.a.pound.core.logic.impl;
 
 import com.loan.a.pound.credit.checkers.ICreditChecker;
-import com.loan.a.pound.model.dao.impl.LoanApplication;
 import com.loan.a.pound.model.dao.impl.User;
-import com.loan.a.pound.model.dao.repositories.ILoanApplicationRepository;
-import com.loan.a.pound.services.IClientServices;
 
 public class LoanEngine {
   
-  public static boolean loanApproved(ICreditChecker creditChecker, LoanApplication loanApplication, User user) {
+  private static final long MINIMUM_REQUIRED_CREDIT_SCORE = 150;
+  
+  public static boolean approveLoan(ICreditChecker creditChecker, User user) {
     
-    if (creditChecker.getCreditScore(user) > 150) {
+    if (creditChecker.getCreditScore(user) > MINIMUM_REQUIRED_CREDIT_SCORE) {
       return true;
     } 
     

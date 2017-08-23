@@ -24,8 +24,8 @@ public class LoanAPoundIndexTest {
 	@Test
 	public void testLoanAPoundIndex() throws Exception {
 		mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON)).
-		andExpect(MockMvcResultMatchers.status().isOk());
-//		andExpect(MockMvcResultMatchers.content().string(Matchers.equalTo("Greetings from LoanAPound!")));
+		andExpect(MockMvcResultMatchers.status().isOk()).
+		andExpect(MockMvcResultMatchers.content().string(Matchers.equalTo("Greetings from LoanAPound!")));
 	}
 
 }
